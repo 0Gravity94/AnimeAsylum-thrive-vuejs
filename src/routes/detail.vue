@@ -1,13 +1,12 @@
 <script setup lang="js">
 import { Suspense } from 'vue';
-import UserList from '@/components/user-list.vue'
+import UserDetail from '@/components/user-detail.vue'
 </script>
 
 <template>
   <div class="container">
-    <h1>Welcome!</h1>
     <Suspense>
-      <UserList />
+      <UserDetail />
       <template #fallback> wait a moment </template>
     </Suspense>
   </div>
@@ -17,8 +16,7 @@ import UserList from '@/components/user-list.vue'
 .container {
   display: grid;
   place-items: center;
-  height: auto;
-  padding-bottom: 2rem;
+  height: max-content;
 }
 
 h1 {

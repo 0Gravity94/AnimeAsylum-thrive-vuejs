@@ -3,7 +3,7 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import { createWebHistory, createRouter } from 'vue-router'
 import Home from './routes/home.vue'
-
+import Detail from './routes/detail.vue'
 import App from './App.vue'
 
 const router = createRouter({
@@ -12,6 +12,10 @@ const router = createRouter({
     {
       path: '/',
       component: Home
+    },
+    {
+      path: '/:animeId',
+      component: Detail
     }
   ]
 })

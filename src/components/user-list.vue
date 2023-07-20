@@ -1,5 +1,4 @@
 <script setup lang="js">
-import { reactive } from 'vue';
 import { RouterLink } from 'vue-router'
 
 // const fetchedUsers = await fetch('https://random-data-api.com/api/v2/users?size=20&response_type=json')
